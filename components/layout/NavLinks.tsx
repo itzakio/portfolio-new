@@ -4,7 +4,7 @@ import { RandomLetterSwapForward } from "../ui/random-letter-swap";
 const NavLinks = () => {
   const navLink: string[] = ["Home", "About", "Contact"];
   return (
-    <ul className="jetbrains-mono-font text-3xl font-semibold absolute left-10 bottom-10 ">
+    <ul className="jetbrains-mono-font text-3xl font-semibold fixed right-5 bottom-5 lg:left-10 lg:bottom-10 w-fit z-999">
       {" "}
       {navLink.map((nav, idx) => (
         <li key={idx}>
@@ -12,7 +12,7 @@ const NavLinks = () => {
             <RandomLetterSwapForward
               label={nav}
               reverse={false}
-              className="font-bold justify-start px-4"
+              className="font-bold justify-end lg:justify-start px-4"
             />
           </a>
         </li>
