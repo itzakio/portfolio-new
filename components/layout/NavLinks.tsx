@@ -1,5 +1,5 @@
 import React from "react";
-import { RandomLetterSwapForward } from "../ui/random-letter-swap";
+import { LetterSwapForward } from "../ui/letter-swap";
 
 const NavLinks = () => {
   const navLink: string[] = ["Home", "About", "Contact"];
@@ -9,7 +9,7 @@ const NavLinks = () => {
       {navLink.map((nav, idx) => (
         <li key={idx}>
           <a href="#">
-            <RandomLetterSwapForward
+            <LetterSwapForward
               label={nav}
               reverse={false}
               className="font-bold justify-end lg:justify-start px-4"
