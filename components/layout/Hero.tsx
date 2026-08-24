@@ -1,10 +1,9 @@
 import Image from "next/image";
-import React from "react";
 import { GooeyTextDemo } from "../parts/GooeyTextDemo";
 
 const Hero = () => {
   return (
-    <div className="h-screen flex justify-center items-center relative w-full">
+    <div className="h-screen flex justify-center items-center relative w-full ">
       {/* <h1 className="text-[250px] font-bold geist-font">Abu Saleh</h1> */}
       <GooeyTextDemo
         text={["ABU SALEH", "WEB DEV.", "FRONT DEV.", "MERN DEV."]}
@@ -23,7 +22,7 @@ const Hero = () => {
       <Image
         src="/akio.png"
         alt="abu saleh"
-        className="shrink-0 absolute bottom-0 left-1/2 -translate-x-1/2 h-2/3 w-auto md:h-4/5"
+        className="shrink-0 absolute bottom-0 left-1/2 -translate-x-1/2 h-2/3 w-auto md:h-4/5 "
         width={400}
         height={800}
       />
